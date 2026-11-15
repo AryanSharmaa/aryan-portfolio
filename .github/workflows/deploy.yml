@@ -1,7 +1,10 @@
+
 name: Test and deploy portfolio
 
 on:
   push:
+    branches: [main]
+  pull_request:
     branches: [main]
   workflow_dispatch:
 
@@ -19,14 +22,17 @@ jobs:
     steps:
       - name: Check out source
         uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.13'
+
       - name: Run site smoke tests
         run: python -m unittest discover -s tests -v
 
   deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     name: Publish to GitHub Pages
     needs: test
     runs-on: ubuntu-latest
@@ -40,18 +46,22 @@ jobs:
     steps:
       - name: Check out source
         uses: actions/checkout@v4
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
+
       - name: Prepare public website files
         run: |
           mkdir -p _site/assets
           cp index.html styles.css script.js _site/
           cp assets/favicon.svg _site/assets/
           touch _site/.nojekyll
+
       - name: Upload website artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+
       - name: Deploy to Pages
         id: deployment
         uses: actions/deploy-pages@v4
