@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#080e16" />
+  <meta name="description" content="Aryan Sharma — Monitoring Technical Engineer at Salesforce. Exploring technical operations, automation, cloud engineering and resilient systems." />
+  <meta property="og:title" content="Aryan Sharma — Technical Operations & Automation" />
+  <meta property="og:description" content="Building reliable operations, intelligent workflows and the next chapter in engineering." />
+  <meta property="og:type" content="website" />
+  <title>Aryan Sharma — Engineering Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="page-glow" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Aryan Sharma, back to top"><span class="brand-mark">a<span class="brand-dot">.</span></span><span class="brand-word">ARYAN SHARMA<span class="brand-slash"> / </span><span class="brand-portfolio">PORTFOLIO</span></span></a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#about">About</a><a href="#work">Work</a><a href="#expertise">Expertise</a><a href="#journey">Journey</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme" id="themeToggle">
+          <svg class="theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+          <svg class="theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5a8.5 8.5 0 1 0 12 12Z"/></svg>
+        </button>
+        <a class="header-cta" href="#contact">Let's connect <span aria-hidden="true">↗</span></a>
+        <button type="button" id="menuToggle" class="icon-button menu-toggle" aria-controls="mobileNav" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" hidden>
+      <a href="#about">About <span>01</span></a><a href="#work">Work <span>02</span></a><a href="#expertise">Expertise <span>03</span></a><a href="#journey">Journey <span>04</span></a><a href="#contact">Contact <span>05</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse-dot"></span> MONITORING TECHNICAL ENGINEER <span class="eyebrow-line"></span> HYDERABAD, INDIA</div>
+        <h1 id="heroTitle">Making<br/><span class="hero-outline">complex</span><br/><span class="hero-accent">systems simpler<span class="terminal-caret">_</span></span></h1>
+        <p class="hero-description">Hi, I'm <strong>Aryan.</strong> I work at the intersection of enterprise operations, proactive monitoring and automation — and I'm building deeper skills in cloud and software delivery.</p>
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="#about">Get to know me <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-meta"><span class="availability-dot"></span><span>Exploring my next technical challenge</span><span class="hero-meta-divider">/</span><span>Salesforce · Signature Success</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Interactive fictional system monitoring demonstration">
+        <div class="visual-orbit orbit-one" aria-hidden="true"></div><div class="visual-orbit orbit-two" aria-hidden="true"></div>
+        <div class="console-panel">
+          <div class="console-top"><div class="console-window"><i></i><i></i><i></i></div><span>OPERATIONS / LIVE DEMO</span><span class="console-symbol">⌘</span></div>
+          <div class="console-content">
+            <div class="console-title-row"><div><div class="tiny-label">SYSTEM OVERVIEW</div><h2>Service health</h2></div><span id="healthBadge" class="status-badge"><span></span>Healthy</span></div>
+            <div class="console-chart">
+              <div class="chart-heading"><span>REQUEST FLOW <span class="muted">/ simulation</span></span><span id="chartReadout">99.9% uptime*</span></div>
+              <svg viewBox="0 0 370 127" role="img" aria-label="Decorative sample service request graph" preserveAspectRatio="none"><defs><linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#c8f76e" stop-opacity=".2"/><stop offset="1" stop-color="#c8f76e" stop-opacity="0"/></linearGradient></defs><path class="grid-line" d="M0 29H370 M0 63H370 M0 97H370"/><path id="areaPath" d="M0 85L27 76L55 84L84 61L113 72L140 52L167 63L193 44L222 49L250 29L277 42L306 24L337 30L370 16V127H0Z" fill="url(#chartFill)"/><path id="linePath" d="M0 85L27 76L55 84L84 61L113 72L140 52L167 63L193 44L222 49L250 29L277 42L306 24L337 30L370 16" stroke="#c8f76e" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="service-list">
+              <div class="service-row"><div class="service-name"><span class="service-icon">⌘</span><span>API Gateway</span></div><span class="service-state" data-service="api"><span class="state-dot"></span> Operational</span></div>
+              <div class="service-row"><div class="service-name"><span class="service-icon">▤</span><span>Data sync</span></div><span class="service-state" data-service="sync"><span class="state-dot"></span> Operational</span></div>
+              <div class="service-row"><div class="service-name"><span class="service-icon">◇</span><span>Alert engine</span></div><span class="service-state" data-service="alert"><span class="state-dot"></span> Operational</span></div>
+            </div>
+            <div class="console-log"><span class="log-prompt">›</span> <span id="consoleLog" aria-live="polite">All simulated services are operating normally.</span><span class="log-caret">▌</span></div>
+            <div class="console-actions"><button class="demo-button demo-alert" id="simulateAlert" type="button">⚡ Simulate incident</button><button class="demo-button demo-reset" id="resetDemo" type="button">↺ Restore</button></div>
+          </div>
+        </div>
+        <div class="floating-chip chip-top"><span class="chip-icon">✧</span> Automation mindset</div>
+        <div class="floating-chip chip-bottom"><span class="chip-icon green">↗</span> Observe → improve → automate</div>
+        <p class="visual-disclaimer">*Illustrative data. Interactive prototype; not a live production dashboard.</p>
+      </div>
+      <div class="hero-side-label" aria-hidden="true">ENGINEER / LEARNER / BUILDER — 2026</div>
+    </section>
+
+    <section class="metrics-section" aria-label="Career highlights">
+      <div class="container metrics-grid">
+        <div class="metric"><strong data-counter="6800" data-suffix="+">6,800+</strong><span>Enterprise cases handled</span></div>
+        <div class="metric"><strong data-counter="7">7</strong><span>Knowledge articles authored</span></div>
+        <div class="metric"><strong data-counter="3" data-suffix=" hrs/wk">~3 hrs/wk</strong><span>Manual review time reduced</span></div>
+        <div class="metric"><strong>3+ <span class="metric-years">yrs</span></strong><span>Enterprise technical operations</span></div>
+      </div>
+    </section>
+
+    <section class="section about-section container" id="about" aria-labelledby="aboutTitle">
+      <div class="section-kicker"><span>01 /</span> ABOUT ME</div>
+      <div class="about-layout">
+        <div class="about-heading"><h2 class="section-heading" id="aboutTitle">Where operations<br/>meet <em>engineering.</em></h2><div class="about-art" aria-hidden="true"><span class="art-coordinate">[ 17.42 / SYSTEMS ]</span><div class="art-glyph">A<span>↗</span></div><span class="art-caption">THINK IN SYSTEMS.<br/>BUILD WITH PURPOSE.</span></div></div>
+        <div class="about-body"><p class="lead">I believe great engineering isn't just about writing code. It's about understanding systems, anticipating failure, and making the experience better for everyone who depends on them.</p><p>At Salesforce, I support enterprise Marketing Cloud customers through proactive monitoring, technical investigations, incident coordination, and health reviews. My day-to-day work has taught me to look beyond alerts and focus on reliability, communication, and repeatable solutions.</p><p>I'm now deepening my practical knowledge of <strong>Git, Python, AWS, CI/CD, Docker, and infrastructure fundamentals</strong> — moving from operational troubleshooting toward building and automating the systems themselves.</p><div class="about-link-row"><a href="https://www.linkedin.com/in/aryan-sharma-b314a9184/" target="_blank" rel="noopener noreferrer" class="text-link">Connect on LinkedIn <span>↗</span></a><a href="https://github.com/AryanSharmaa" target="_blank" rel="noopener noreferrer" class="text-link">Explore GitHub <span>↗</span></a></div></div>
+      </div>
+    </section>
+
+    <section class="section work-section" id="work" aria-labelledby="workTitle">
+      <div class="container">
+        <div class="section-kicker"><span>02 /</span> SELECTED WORK</div>
+        <div class="section-title-row"><div><h2 class="section-heading" id="workTitle">Ideas made <em>useful.</em></h2><p class="section-intro">A mix of operational improvements, automation experiments, and technical learning projects. Each is labelled by its actual stage of development.</p></div><div class="work-index">SELECTED / 2024—2026</div></div>
+        <div class="filter-bar" role="group" aria-label="Filter projects"><button class="filter-pill is-active" type="button" data-filter="all" aria-pressed="true">All work <span>06</span></button><button class="filter-pill" type="button" data-filter="operations" aria-pressed="false">Operations</button><button class="filter-pill" type="button" data-filter="automation" aria-pressed="false">Automation</button><button class="filter-pill" type="button" data-filter="learning" aria-pressed="false">Learning labs</button></div>
+        <div class="projects-grid" id="projectsGrid">
+          <article class="project-card project-featured" data-category="automation operations">
+            <div class="project-art art-audit" aria-hidden="true"><span class="art-window-label">CASE QUALITY / REVIEW</span><div class="audit-widget"><div class="widget-header"><span>Audit overview</span><span>↗</span></div><div class="audit-bars"><i style="--bar:47%"></i><i style="--bar:76%"></i><i style="--bar:61%"></i><i style="--bar:88%"></i><i style="--bar:68%"></i><i style="--bar:96%"></i><i style="--bar:79%"></i><i style="--bar:100%"></i></div><div class="widget-bottom"><span>Manual effort saved</span><strong>~3h / week</strong></div></div><span class="art-corner">01 — 06</span></div>
+            <div class="project-info"><div class="project-topline"><span class="project-type">AUTOMATION · OPERATIONS</span><span class="project-stage">Applied at work</span></div><h3>Case-response audit & governance</h3><p>Defined SLA-based review logic for a more efficient case-auditing workflow, reducing recurring manual review work.</p><div class="project-bottom"><div class="tags"><span>Process design</span><span>SLA logic</span><span>Workflow automation</span></div><button class="project-open" data-project="audit" aria-label="Read details for Case-response audit" type="button">↗</button></div></div>
+          </article>
+          <article class="project-card" data-category="automation">
+            <div class="project-art art-slack" aria-hidden="true"><span class="art-window-label">HUMAN + AI / WORKFLOW</span><div class="slack-widget"><div class="chat-bubble bubble-one"><span class="chat-logo">✳</span><span>How can I help with your issue?</span></div><div class="chat-bubble bubble-two"><span>Here's the first troubleshooting step…</span></div><div class="chat-handoff">Need assistance? <span>↗ Escalate</span></div></div><span class="art-corner">02 — 06</span></div>
+            <div class="project-info"><div class="project-topline"><span class="project-type">AI WORKFLOW</span><span class="project-stage">Applied at work</span></div><h3>AI-assisted Slack support</h3><p>A no-code prompt-driven support flow that guides first responses and routes unresolved queries to a person.</p><div class="project-bottom"><div class="tags"><span>Slack</span><span>AI prompting</span><span>Human handoff</span></div><button class="project-open" data-project="slack" aria-label="Read details for AI-assisted Slack support" type="button">↗</button></div></div>
+          </article>
+          <article class="project-card" data-category="operations">
+            <div class="project-art art-tableau" aria-hidden="true"><span class="art-window-label">TEAM PERFORMANCE / ANALYTICS</span><div class="tableau-widget"><div class="tableau-numbers"><span>CASE VOLUME <b>↑</b></span><strong>KPIs</strong></div><svg viewBox="0 0 220 77" preserveAspectRatio="none"><path d="M0 59L28 52L50 57L75 35L104 43L136 25L162 34L190 16L220 10" stroke="#80b9fb" fill="none" stroke-width="3" stroke-linecap="round"/><path d="M0 59L28 52L50 57L75 35L104 43L136 25L162 34L190 16L220 10V77H0Z" fill="rgba(128,185,251,.12)"/></svg><div class="tableau-caption">SLA · RESPONSE TIME · WORKLOAD</div></div><span class="art-corner">03 — 06</span></div>
+            <div class="project-info"><div class="project-topline"><span class="project-type">ANALYTICS</span><span class="project-stage">Built prototype</span></div><h3>Operations performance dashboard</h3><p>A Tableau dashboard concept to make case volume, SLA adherence and response-time trends easier to explore.</p><div class="project-bottom"><div class="tags"><span>Tableau</span><span>KPIs</span><span>Reporting</span></div><button class="project-open" data-project="tableau" aria-label="Read details for Tableau dashboard" type="button">↗</button></div></div>
+          </article>
+          <article class="project-card" data-category="operations automation">
+            <div class="project-art art-radar" aria-hidden="true"><span class="art-window-label">ESCALATION PRIORITIZATION</span><div class="radar-scope"><span class="radar-ring r1"></span><span class="radar-ring r2"></span><span class="radar-ring r3"></span><span class="radar-cross horizontal"></span><span class="radar-cross vertical"></span><span class="radar-sweep"></span><span class="radar-blip blip1"></span><span class="radar-blip blip2"></span></div><span class="art-corner">04 — 06</span></div>
+            <div class="project-info"><div class="project-topline"><span class="project-type">OPERATIONAL DESIGN</span><span class="project-stage">Design concept</span></div><h3>Escalation-risk radar</h3><p>A prioritization approach for identifying cases needing attention based on follow-up delays, reopens and risk signals.</p><div class="project-bottom"><div class="tags"><span>Risk signals</span><span>Case triage</span></div><button class="project-open" data-project="radar" aria-label="Read details for escalation risk radar" type="button">↗</button></div></div>
+          </article>
+          <article class="project-card" data-category="learning">
+            <div class="project-art art-cicd" aria-hidden="true"><span class="art-window-label">CI / CD · LEARNING LAB</span><div class="pipeline-widget"><span>CODE</span><i>→</i><span>TEST</span><i>→</i><span>DEPLOY</span></div><div class="code-mini"><span>$ python3 -m unittest test_page.py -v</span><span class="code-pass">✓ Local tests passing</span></div><span class="art-corner">05 — 06</span></div>
+            <div class="project-info"><div class="project-topline"><span class="project-type">DEVOPS LEARNING</span><span class="project-stage">In progress</span></div><h3>CI/CD status-page project</h3><p>A hands-on HTML, Python and GitHub Actions project exploring automated tests and website deployment.</p><div class="project-bottom"><div class="tags"><span>Git</span><span>Python</span><span>GitHub Actions</span></div><button class="project-open" data-project="cicd" aria-label="Read details for CI/CD status page" type="button">↗</button></div></div>
+          </article>
+          <article class="project-card" data-category="learning">
+            <div class="project-art art-aws" aria-hidden="true"><span class="art-window-label">CLOUD INFRASTRUCTURE / LABS</span><div class="cloud-widget"><div class="cloud-box">EC2</div><div class="cloud-connector"></div><div class="cloud-box center">VPC</div><div class="cloud-connector"></div><div class="cloud-box">ALB</div><div class="cloud-small">IAM / SUBNETS / ROUTING</div></div><span class="art-corner">06 — 06</span></div>
+            <div class="project-info"><div class="project-topline"><span class="project-type">AWS LEARNING</span><span class="project-stage">Hands-on labs</span></div><h3>AWS infrastructure exercises</h3><p>Scenario-based practice with EC2, IAM, networking, security groups, load balancing and related cloud services.</p><div class="project-bottom"><div class="tags"><span>AWS</span><span>Networking</span><span>Cloud fundamentals</span></div><button class="project-open" data-project="aws" aria-label="Read details for AWS learning exercises" type="button">↗</button></div></div>
+          </article>
+        </div>
+        <p class="work-footnote"><span>↳</span> Internal initiatives are described at a high level without confidential Salesforce/customer data. Some project visuals are conceptual illustrations.</p>
+      </div>
+    </section>
+
+    <section class="section expertise-section container" id="expertise" aria-labelledby="expertiseTitle">
+      <div class="section-kicker"><span>03 /</span> HOW I WORK</div>
+      <div class="section-title-row"><div><h2 class="section-heading" id="expertiseTitle">Practical strengths.<br/><em>Curious mindset.</em></h2><p class="section-intro">Grounded experience in operational systems, paired with deliberate learning in cloud and engineering.</p></div></div>
+      <div class="expertise-grid">
+        <div class="expertise-card"><div class="expertise-number">01 / CORE EXPERIENCE</div><div class="expertise-icon">◈</div><h3>Enterprise operations</h3><p>Investigating anomalies, supporting reliable customer experiences, and coordinating the right people when systems need attention.</p><div class="skill-pills"><span>Salesforce Marketing Cloud</span><span>Proactive monitoring</span><span>Splunk</span><span>Incident coordination</span><span>Technical health reviews</span><span>SLA governance</span></div></div>
+        <div class="expertise-card"><div class="expertise-number">02 / PRACTICAL TOOLS</div><div class="expertise-icon">⌘</div><h3>Automation & insights</h3><p>Finding repetitive operational work, improving its logic and turning scattered signals into something actionable.</p><div class="skill-pills"><span>Slack Workflow Builder</span><span>AI prompt workflows</span><span>Tableau</span><span>Operational SQL</span><span>Knowledge design</span><span>Process improvement</span></div></div>
+        <div class="expertise-card learning-card"><div class="expertise-number">03 / CURRENTLY BUILDING</div><div class="expertise-icon">↗</div><h3>Cloud & software delivery</h3><p>Developing hands-on engineering foundations through small projects, technical experiments and repeatable practice.</p><div class="skill-pills"><span>Git / GitHub</span><span>Python fundamentals</span><span>AWS labs</span><span>CI/CD fundamentals</span><span>Linux basics</span><span>Docker — learning</span></div><div class="learning-note"><span class="learning-note-dot"></span> Learning foundations — not presented as production expertise</div></div>
+      </div>
+    </section>
+
+    <section class="section journey-section" id="journey" aria-labelledby="journeyTitle"><div class="container"><div class="section-kicker"><span>04 /</span> MY JOURNEY</div><div class="journey-grid"><div><h2 class="section-heading" id="journeyTitle">Always building<br/><em>what's next.</em></h2><p class="section-intro">My path began in customer-facing technical operations. Today I'm connecting that operational perspective with the craft of engineering.</p><div class="education-card"><span class="education-label">ALSO LEARNING</span><h3>MBA · AI in Business</h3><p>BITS Pilani · Work Integrated Learning Programme</p><span>2026 — 2028 · In progress</span></div></div><div class="timeline"><div class="timeline-item"><div class="timeline-point"></div><div class="timeline-date">2025 — PRESENT</div><h3>Monitoring Technical Engineer</h3><div class="timeline-company">Salesforce · Marketing Cloud / Signature Success</div><p>Enterprise monitoring, technical investigations, health reviews, stakeholder coordination and operational improvements.</p></div><div class="timeline-item"><div class="timeline-point"></div><div class="timeline-date">2023 — 2025</div><h3>Associate Proactive Monitoring Engineer</h3><div class="timeline-company">Salesforce · Marketing Cloud</div><p>Built a foundation in customer support operations, monitoring, case handling and technical troubleshooting.</p></div><div class="timeline-item"><div class="timeline-point"></div><div class="timeline-date">2023</div><h3>B.E. in Computer Science</h3><div class="timeline-company">Chandigarh University</div><p>Started my professional journey with a computer science engineering foundation.</p></div></div></div></div></section>
+
+    <section class="section credentials-section container" aria-labelledby="credentialsTitle"><div class="section-kicker"><span>05 /</span> CREDENTIALS</div><div class="credential-intro"><h2 class="section-heading" id="credentialsTitle">Learning, <em>validated.</em></h2><p>Selected certifications that complement my operational experience. Certifications are a foundation; practical skill comes from applying them.</p></div><div class="credentials-list"><div class="credential-item"><span class="credential-number">01</span><span>ITIL 4 Foundation</span><span class="credential-category">SERVICE MANAGEMENT</span><span class="credential-arrow">↗</span></div><div class="credential-item"><span class="credential-number">02</span><span>Professional Scrum Master I</span><span class="credential-category">AGILE DELIVERY</span><span class="credential-arrow">↗</span></div><div class="credential-item"><span class="credential-number">03</span><span>Salesforce Certified Administrator & Platform Administrator II</span><span class="credential-category">SALESFORCE PLATFORM</span><span class="credential-arrow">↗</span></div><div class="credential-item"><span class="credential-number">04</span><span>Salesforce Platform App Builder & Business Analyst</span><span class="credential-category">PLATFORM & BUSINESS</span><span class="credential-arrow">↗</span></div><div class="credential-item"><span class="credential-number">05</span><span>Salesforce Data Cloud Consultant & Agentforce Specialist</span><span class="credential-category">DATA & AI</span><span class="credential-arrow">↗</span></div></div></section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contactTitle"><div class="container contact-inner"><div class="section-kicker"><span>06 /</span> LET'S TALK</div><div class="contact-title"><h2 id="contactTitle">Good systems start<br/>with <em>good conversations.</em></h2><div class="contact-spark" aria-hidden="true">↗</div></div><p>Interested in cloud engineering, automation, technical operations or building something thoughtful? I'd be glad to connect.</p><div class="contact-buttons"><a class="button button-primary" href="https://www.linkedin.com/in/aryan-sharma-b314a9184/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a><a class="button button-outline" href="https://github.com/AryanSharmaa" target="_blank" rel="noopener noreferrer">View GitHub ↗</a></div><div class="contact-tagline">LET'S MAKE THE NEXT ITERATION BETTER.</div></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><div class="footer-brand">ARYAN<span>.</span> <small>SHARMA</small></div><p>Made with intention. Built to keep evolving.</p><div class="footer-end"><span>© <span id="currentYear">2026</span> Aryan Sharma</span><a href="#top">Back to top ↑</a></div></div><div class="container footer-disclaimer">Personal portfolio. Not affiliated with or endorsed by Salesforce. Internal work is summarized without confidential information.</div></footer>
+
+  <dialog id="projectDialog" class="project-dialog" aria-labelledby="dialogTitle"><button type="button" class="dialog-close" id="dialogClose" aria-label="Close project details">×</button><div class="dialog-content"><div class="dialog-eyebrow" id="dialogCategory">PROJECT DETAILS</div><h2 id="dialogTitle">Project title</h2><p id="dialogDescription"></p><div class="dialog-section"><h3>What I contributed</h3><ul id="dialogBullets"></ul></div><div class="dialog-footer"><span id="dialogStage"></span><button id="dialogDone" type="button">Back to portfolio <span>↗</span></button></div></div></dialog>
+</body>
+</html>
